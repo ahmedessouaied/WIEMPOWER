@@ -14,7 +14,7 @@ _Mobile Application_
 (Separate Repository)
 
 - _Tech Stack:_ Flutter, Firebase
-- _Repository:_ [Fortes Feminae Mobile](https://github.com/fortes-feminae/mobile)
+- _Repository:_ [Fortes Feminae Mobile](https://github.com/ahmedbhyy/fortess_femenao)
 - Allows learning on-the-go with access to all courses, discussions, and resources
 
 ---
@@ -36,4 +36,4 @@ _Mobile Application_
 
 ### Mobile App
 
-The mobile application is maintained in a separate repository. Please visit [Fortes Feminae Mobile](https://github.com/fortes-feminae/mobile) for installation and setup instructions.
+The mobile application is maintained in a separate repository. Please visit [Fortes Feminae Mobile](https://github.com/ahmedbhyy/fortess_femenao) for installation and setup instructions.
