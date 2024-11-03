@@ -4,7 +4,10 @@ import { streamText } from "ai";
 const ai = mistral(process.env.MISTRAL_API_KEY);
 
 export const maxDuration = 30;
-
+// const firebaseConfig = {
+//   credential: cert(require("./path/to/serviceAccountKey.json")),
+//   databaseURL: "https://<your-project-id>.firebaseio.com",
+// };
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();

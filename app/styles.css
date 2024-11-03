@@ -38,7 +38,7 @@
 }
 
 .message.user .message-content {
-  background-color: #3182ce;
+  background-color: #ef4a81;
   color: #ffffff;
 }
 
@@ -91,7 +91,7 @@
 
 .loading-indicator {
   font-size: 14px;
-  color: #3182ce;
+  color: #ef4a81;
   text-align: center;
   margin: 10px 0;
 }

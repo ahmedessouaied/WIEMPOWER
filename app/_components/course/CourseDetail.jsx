@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 import {
   ArrowLeft,
   Plus,
   CheckCircle,
   XCircle,
   RefreshCcw,
-  Trophy
-} from 'lucide-react';
+  Trophy,
+} from "lucide-react";
 
 const BasicAddition = () => {
-  const [answer, setAnswer] = useState('');
-  const [feedback, setFeedback] = useState('');
+  const [answer, setAnswer] = useState("");
+  const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
   const [currentProblem, setCurrentProblem] = useState({ num1: 3, num2: 4 });
   const [showCelebration, setShowCelebration] = useState(false);
@@ -46,8 +47,8 @@ const BasicAddition = () => {
     const num1 = Math.floor(Math.random() * 10);
     const num2 = Math.floor(Math.random() * 10);
     setCurrentProblem({ num1, num2 });
-    setAnswer('');
-    setFeedback('');
+    setAnswer("");
+    setFeedback("");
   };
 
   const checkAnswer = () => {
@@ -55,7 +56,7 @@ const BasicAddition = () => {
     const userAnswer = parseInt(answer);
 
     if (userAnswer === correctAnswer) {
-      setFeedback('correct');
+      setFeedback("correct");
       setScore(score + 1);
       setShowCelebration(true);
       setTimeout(() => {
@@ -63,7 +64,7 @@ const BasicAddition = () => {
         generateNewProblem();
       }, 1500);
     } else {
-      setFeedback('incorrect');
+      setFeedback("incorrect");
     }
   };
 
@@ -84,22 +85,28 @@ const BasicAddition = () => {
             onClick={() => setViewingLesson(!viewingLesson)}
             className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors font-medium"
           >
-            {viewingLesson ? 'Go to Exercises' : 'View Lesson'}
+            {viewingLesson ? "Go to Exercises" : "View Lesson"}
           </button>
         </div>
 
         {/* Course Details Section */}
         {viewingLesson ? (
           <div className="bg-white rounded-lg p-6 mb-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-pink-800 mb-4">Course Details</h2>
-            <p className="text-pink-700 text-lg whitespace-pre-line">{lessonContent}</p>
+            <h2 className="text-2xl font-semibold text-pink-800 mb-4">
+              Course Details
+            </h2>
+            <p className="text-pink-700 text-lg whitespace-pre-line">
+              {lessonContent}
+            </p>
           </div>
         ) : (
           <>
             {/* Progress Section */}
             <div className="bg-white rounded-lg p-6 mb-8 shadow-sm">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-semibold text-pink-800">Your Progress</h2>
+                <h2 className="text-xl font-semibold text-pink-800">
+                  Your Progress
+                </h2>
                 <div className="flex items-center gap-2">
                   <Trophy className="w-5 h-5 text-pink-500" />
                   <span className="text-pink-600">Score: {score}</span>
@@ -109,8 +116,10 @@ const BasicAddition = () => {
 
             {/* Learning Section */}
             <div className="bg-white rounded-lg p-8 mb-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-pink-800 mb-6">Let's Practice!</h2>
-              
+              <h2 className="text-2xl font-semibold text-pink-800 mb-6">
+                Let's Practice!
+              </h2>
+
               {/* Problem Display */}
               <div className="flex items-center justify-center gap-4 text-4xl font-bold mb-8">
                 <span className="text-pink-600">{currentProblem.num1}</span>
@@ -128,16 +137,18 @@ const BasicAddition = () => {
 
               {/* Feedback Display */}
               {feedback && (
-                <div className={`flex items-center justify-center gap-2 mb-6 ${
-                  feedback === 'correct' ? 'text-pink-500' : 'text-red-500'
-                }`}>
-                  {feedback === 'correct' ? (
+                <div
+                  className={`flex items-center justify-center gap-2 mb-6 ${
+                    feedback === "correct" ? "text-pink-500" : "text-red-500"
+                  }`}
+                >
+                  {feedback === "correct" ? (
                     <CheckCircle className="w-6 h-6" />
                   ) : (
                     <XCircle className="w-6 h-6" />
                   )}
                   <span className="text-lg font-medium">
-                    {feedback === 'correct' ? 'Great job!' : 'Try again!'}
+                    {feedback === "correct" ? "Great job!" : "Try again!"}
                   </span>
                 </div>
               )}
@@ -162,19 +173,27 @@ const BasicAddition = () => {
 
             {/* Visual Aid Section */}
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h2 className="text-xl font-semibold text-pink-800 mb-4">Visual Aid</h2>
+              <h2 className="text-xl font-semibold text-pink-800 mb-4">
+                Visual Aid
+              </h2>
               <div className="flex justify-center gap-8">
                 {/* First Number Dots */}
                 <div className="grid grid-cols-5 gap-2">
                   {[...Array(currentProblem.num1)].map((_, i) => (
-                    <div key={i} className="w-6 h-6 rounded-full bg-pink-500"></div>
+                    <div
+                      key={i}
+                      className="w-6 h-6 rounded-full bg-pink-500"
+                    ></div>
                   ))}
                 </div>
                 <Plus className="w-6 h-6 text-pink-400 self-center" />
                 {/* Second Number Dots */}
                 <div className="grid grid-cols-5 gap-2">
                   {[...Array(currentProblem.num2)].map((_, i) => (
-                    <div key={i} className="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div
+                      key={i}
+                      className="w-6 h-6 rounded-full bg-pink-300"
+                    ></div>
                   ))}
                 </div>
               </div>

@@ -20,16 +20,12 @@ const Projects = () => (
     <div className="container">
       <div className="card-container">
         <Link href="/project-detail1">
-          <img
-            className="hero-image"
-            src="/images/app-develbbbbbbbbb.jpg"
-            alt="Web Project"
-          />
+          <img className="hero-image" src="/images/cn.jpg" alt="Web Project" />
         </Link>
         <main className="main-content">
           <p>
-            Web Project: Building websites or web apps for online information or
-            services.
+            Networking Project:<br></br> Building network architecture for a
+            fictional small company .
           </p>
           <div className="flex-row">
             <div className="coin-base mr-5">
@@ -42,7 +38,7 @@ const Projects = () => (
                 alt="clock"
                 className="small-image"
               />
-              <p>3 days left</p>
+              <p>3 days ago</p>
             </div>
           </div>
         </main>
@@ -57,6 +53,12 @@ const Projects = () => (
             <span>
               <a href="#">ones Noa</a>
             </span>
+            <span className="ml-4 bg-pink-400 border-none w-10 h-6 rounded-md p-1">
+              Protocols
+            </span>
+            <span className="ml-4 bg-pink-400 border-none w-10 h-6 rounded-md p-1">
+              Routing
+            </span>
           </p>
         </div>
       </div>
@@ -64,14 +66,14 @@ const Projects = () => (
         <Link href="/project-detail1">
           <img
             className="hero-image"
-            src="/images/app-develbbbbbbbbb.jpg"
+            src="/images/math.jpg"
             alt="Web Project"
           />
         </Link>
         <main className="main-content">
           <p>
-            Web Project: Building websites or web apps for online information or
-            services.
+            Math:<br></br> Basic addition,substruction,multiplication and
+            division problems .
           </p>
           <div className="flex-row">
             <div className="coin-base mr-5">
@@ -84,7 +86,7 @@ const Projects = () => (
                 alt="clock"
                 className="small-image"
               />
-              <p>3 days left</p>
+              <p>3 days ago</p>
             </div>
           </div>
         </main>
@@ -99,21 +101,19 @@ const Projects = () => (
             <span>
               <a href="#">ones Noa</a>
             </span>
+            <span className="ml-4 bg-pink-400 border-none w-10 h-6 rounded-md p-1">
+              Algebra
+            </span>
           </p>
         </div>
       </div>
       <div className="card-container">
         <Link href="/project-detail1">
-          <img
-            className="hero-image"
-            src="/images/app-develbbbbbbbbb.jpg"
-            alt="Web Project"
-          />
+          <img className="hero-image" src="/images/os.jpg" alt="Web Project" />
         </Link>
         <main className="main-content">
           <p>
-            Web Project: Building websites or web apps for online information or
-            services.
+            OS:<br></br> Exploring differences between operating systems.
           </p>
           <div className="flex-row">
             <div className="coin-base mr-5">
@@ -126,7 +126,7 @@ const Projects = () => (
                 alt="clock"
                 className="small-image"
               />
-              <p>3 days left</p>
+              <p>3 days ago</p>
             </div>
           </div>
         </main>
@@ -140,6 +140,12 @@ const Projects = () => (
             {" "}
             <span>
               <a href="#">ones Noa</a>
+            </span>
+            <span className="ml-4 bg-pink-400 border-none w-10 h-6 rounded-md p-1 ">
+              Linux
+            </span>
+            <span className="ml-4 bg-pink-400 border-none w-10 h-6 rounded-md p-1">
+              Ubuntu
             </span>
           </p>
         </div>

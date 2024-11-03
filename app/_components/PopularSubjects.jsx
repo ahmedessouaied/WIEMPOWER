@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import "./style.css";
+import Link from "next/link";
 
 const PopularSubjects = () => (
   <div className="title">
-    <span>Popular Subjects</span>
+    <span className="text-5xl">Popular Subjects</span>
     <br />
     <br />
     <div className="course">
@@ -29,10 +30,10 @@ const PopularSubjects = () => (
             </a>
           </div>
           <div className="det">
-            <a href="subjects/quiz.html">
+            <Link href="/subject1">
               <img src="/images/d1.png" alt="Daily Quiz" />
               Daily Quiz
-            </a>
+            </Link>
           </div>
         </div>
       </center>

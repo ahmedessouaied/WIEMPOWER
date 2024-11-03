@@ -18,7 +18,7 @@ const ProjectDetail = () => {
     subtitle: "Connecting Women in Technology with Mentors",
     description:
       "A comprehensive mentorship platform designed to bridge the gender gap in technology by connecting aspiring women technologists with experienced mentors. The platform facilitates meaningful connections, knowledge sharing, and career growth opportunities.",
-    image: "/api/placeholder/1200/600",
+    image: "/images/web-development.jpg",
     technologies: ["React", "Node.js", "MongoDB", "WebRTC", "Socket.io", "AWS"],
     category: "Web Application",
     teamSize: 4,

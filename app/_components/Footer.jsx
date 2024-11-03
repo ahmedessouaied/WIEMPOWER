@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="footer-container">
       <div className="left-col">
         <img
-          src="/images/logo - Copy.png"
+          src="/images/logo.png"
           style={{ width: "200px" }}
           alt="LearnEd logo"
         />

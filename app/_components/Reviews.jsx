@@ -38,9 +38,9 @@ const Reviews = () => (
       </div>
       <div className="rev-card">
         <div className="identity">
-          <img src="/images/humanNotExist1.jpg" alt="Sophie Daniel" />
-          <p>Sophie Daniel</p>
-          <h6>Java</h6>
+          <img src="/images/humanNotExist4.jpg" alt="Sophie Daniel" />
+          <p>Katya George</p>
+          <h6>Kotlin</h6>
           <div className="rating">
             {[...Array(5)].map((_, i) => (
               <img src="/images/star.png" key={i} alt="star" />
@@ -50,8 +50,7 @@ const Reviews = () => (
         <div className="rev-cont">
           <p id="title">Review:</p>
           <p id="content">
-            I did Java Fundamental course with Rishab Sir. It was a great
-            experience...
+            Working with Laila is something else , she is so helpful .
           </p>
         </div>
       </div>

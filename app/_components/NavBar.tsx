@@ -3,12 +3,14 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <nav>
-      <div className="logo">
-        <img src="/images/logo.png" alt="logo" />
-      </div>
+      <Link href="/">
+        <div className="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+      </Link>
       <ul>
         <li>
-          <a className="active" href="#home">
+          <a className="active" href="/">
             Home
           </a>
         </li>
@@ -29,7 +31,7 @@ export default function NavBar() {
         </li>
       </ul>
       <div>
-        <Link className="get-started" href="">
+        <Link className="get-started" href="/chat">
           ChatBot
         </Link>
         <Link className="get-started" href="/login">
